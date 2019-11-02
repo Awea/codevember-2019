@@ -1,0 +1,12 @@
+{
+  "name": "codevember-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "canvas-sketch": "^0.7.1",
+    "canvas-sketch-cli": "^1.11.7",
+    "canvas-sketch-util": "^1.10.0",
+    "three": "^0.110.0"
+  }
+}

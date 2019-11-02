@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+dist/
+*.log
+
+# Deployment
+.env
+
+# Stuff
+.todo
