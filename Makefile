@@ -1,4 +1,4 @@
-include .env
+-include .env
 
 CANVAS_SKETCH := $(PWD)/node_modules/.bin/canvas-sketch
 
