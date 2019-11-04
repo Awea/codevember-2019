@@ -1977,6 +1977,27 @@ glslify@^6.3.0:
     through2 "^2.0.1"
     xtend "^4.0.0"
 
+glslify@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/glslify/-/glslify-7.0.0.tgz#10d5db9541ee07c6548ea55c679edda20307653d"
+  integrity sha512-yw8jDQIe9FlSH5NiZEqSAsCPj9HI7nhXgXLAgSv2Nm9eBPsFJmyN9+rNwbiozJapcj9xtc/71rMYlN9cxp1B8Q==
+  dependencies:
+    bl "^1.0.0"
+    concat-stream "^1.5.2"
+    duplexify "^3.4.5"
+    falafel "^2.1.0"
+    from2 "^2.3.0"
+    glsl-resolve "0.0.1"
+    glsl-token-whitespace-trim "^1.0.0"
+    glslify-bundle "^5.0.0"
+    glslify-deps "^1.2.5"
+    minimist "^1.2.0"
+    resolve "^1.1.5"
+    stack-trace "0.0.9"
+    static-eval "^2.0.0"
+    through2 "^2.0.1"
+    xtend "^4.0.0"
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
@@ -2069,6 +2090,11 @@ he@1.2.x:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+hex-color-linterp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/hex-color-linterp/-/hex-color-linterp-1.0.1.tgz#f98747fc5c9292bf7e9f93ae5679c3f1f1b3d85f"
+  integrity sha512-J8ElmC29xs7Evxle+vIGC16vHh9wS2c3R+Y+rS7zZENXwkThg0bIU80TLmHRoHKDo0UPU4QYK4Tic0ofe8pc3A==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
