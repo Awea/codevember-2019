@@ -9,6 +9,7 @@
     "canvas-sketch-util": "^1.10.0",
     "glslify": "^7.0.0",
     "hex-color-linterp": "^1.0.1",
+    "postprocessing": "^6.8.8",
     "three": "^0.110.0"
   }
 }
