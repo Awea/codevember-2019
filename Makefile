@@ -17,17 +17,17 @@ serve: deps
 	@$(CANVAS_SKETCH) src/$(LATEST)
 
 SRC_FILES := $(wildcard src/*.js)
-OBJ_FILES := $(patsubst src/%,dist/%,$(SRC_FILES))
+OBJ_FILES := $(patsubst src/%,site/%,$(SRC_FILES))
 ## Build site for production use
 build: deps $(OBJ_FILES)
 
-dist/%.js: src/%.js
-	@$(CANVAS_SKETCH) $< --dir dist --build
+site/%.js: src/%.js
+	@$(CANVAS_SKETCH) $< --dir site --build
 
-## Deploy dist/ to https://codevember.davidauthier.wearemd.com/2019/11/
+## Deploy site/ to https://codevember.davidauthier.wearemd.com/2019/11/
 .PHONY: deploy
 deploy: build
-	@rsync -avz ./dist/ $(USER)@$(SERVER):$(SERVER_DEST)
+	@rsync -avz ./site/ $(USER)@$(SERVER):$(SERVER_DEST)
 
 define primary
 \033[38;2;166;204;112;1m$(1)\033[0m
