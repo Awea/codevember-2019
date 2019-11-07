@@ -64,8 +64,8 @@ const sketch = ({ context, width, height }) => {
 
   scene.add(group);
 
-  var axesHelper = new THREE.AxesHelper( 50 );
-  scene.add( axesHelper );
+  // var axesHelper = new THREE.AxesHelper( 50 );
+  // scene.add( axesHelper );
 
   renderer.render( scene, camera );
 
