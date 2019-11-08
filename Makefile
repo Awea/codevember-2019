@@ -24,7 +24,7 @@ build: deps $(OBJ_FILES)
 site/%.js: src/%.js
 	@$(CANVAS_SKETCH) $< --dir site --build
 
-## Deploy site/ to https://codevember.davidauthier.wearemd.com/2019/11/
+## Deploy site to https://codevember.davidauthier.wearemd.com/2019/11/
 .PHONY: deploy
 deploy: build
 	@rsync -avz ./site/ $(USER)@$(SERVER):$(SERVER_DEST)
