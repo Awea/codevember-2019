@@ -19,6 +19,7 @@ serve: deps
 SRC_FILES := $(wildcard src/*.js)
 OBJ_FILES := $(patsubst src/%,site/%,$(SRC_FILES))
 ## Build site for production use
+.PHONY: build
 build: deps $(OBJ_FILES)
 
 site/%.js: src/%.js
