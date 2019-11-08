@@ -42,7 +42,7 @@ make build
 
 ### Deploy
 ```makefile
-## Deploy dist/ to https://codevember.davidauthier.wearemd.com/2019/11/
+## Deploy site to https://codevember.davidauthier.wearemd.com/2019/11/
 
 make deploy
 ```
