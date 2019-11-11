@@ -37,7 +37,7 @@ const fragmentShader = glslify(/* glsl */`
   void main() {
     // We manage the device ratio by passing PR constant
     vec2 res = u_res * PR;
-    vec2 st = gl_FragCoord.xy / res.xy - vec2(0.5);
+    vec2 st = (gl_FragCoord.xy / res.xy - vec2(0.5)) * vec2(1.5);
     // tip: use the following formula to keep the good ratio of your coordinates
     st.y *= u_res.y / u_res.x;
 
