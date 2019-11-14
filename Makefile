@@ -3,18 +3,21 @@
 CANVAS_SKETCH := $(PWD)/node_modules/.bin/canvas-sketch
 
 .PHONY: deps
-deps: node_modules
+deps: node_modules src/assets
 
 node_modules: package.json yarn.lock
 	@yarn install
 	@touch $@
 
+src/assets:
+	@ln -s $(PWD)/site/assets $@
+
 .DEFAULT_GOAL := serve
-LATEST := $(shell ls src -Art | tail -n 1)
+LATEST := $(shell ls src | grep -v assets | tail -n 1)
 ## Serve latest src/*.js at http://localhost:9966 with hot reloading
 .PHONY: serve
 serve: deps
-	@$(CANVAS_SKETCH) src/$(LATEST)
+	@$(CANVAS_SKETCH) src/$(LATEST) --dir src
 
 SRC_FILES := $(wildcard src/*.js)
 OBJ_FILES := $(patsubst src/%,site/%,$(SRC_FILES))

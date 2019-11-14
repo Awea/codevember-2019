@@ -67,6 +67,9 @@ make help
 ## 🗄️ Project structure
 ```
 .
+├── site           # SITE BUILD DESTINATION FOLDER
+│    └── assets    # Various assets
+│
 ├── src            # JavaScript source files
 │
 ├── .gitignore     # Files and folders ignored by Git
